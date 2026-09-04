@@ -78,7 +78,7 @@ async def ask_gemini(user_id: int, text: str) -> str:
         # مكتبة google-genai المستخدمة هنا متزامنة؛ لا تحجب event loop الخاص بـ Pyrogram.
         response = await asyncio.to_thread(
             gemini_client.models.generate_content,
-            model="gemini-2.0-flash",
+            model="gemini-2.5-flash",
             contents=contents,
             config=types.GenerateContentConfig(temperature=0.65, max_output_tokens=900),
         )
