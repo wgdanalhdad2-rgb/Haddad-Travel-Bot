@@ -1,0 +1,4 @@
+pyrogram==2.0.106
+tgcrypto==1.2.5
+Flask==2.3.3
+google-genai==0.3.0
